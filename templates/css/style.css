@@ -1,0 +1,348 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.background{
+    background-image: url(/img/background.jpg);
+    padding-top: 90px;
+    padding-bottom: 25px;
+}
+
+.body{
+    padding-top: 140px;
+    padding-bottom: 25px;
+    /* width: 90%; */
+    margin: auto
+}
+
+.background.login{
+    height: 850px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(242, 242, 242, 0.90);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.mobileheader{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(242, 242, 242, 0.90);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.mobilenav{
+    position: fixed;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(185, 191, 4, 0.97);
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.tabletnav{
+    display: none;
+}
+
+.navicon{
+    width: 25px;
+    margin: 10px;
+}
+
+.logouticon{
+    position: fixed;
+    right: 25px;
+    width: 25px;
+}
+
+.register{
+    vertical-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    /* margin: 10% 25% 0 25%; */
+    background-color: rgb(242, 242, 242, 0.95) ;
+    /* text-align: center; */
+}
+
+.registerform{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    width: 100%;
+}
+
+.logotext {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    color: #323E40;
+}
+
+.formredirect{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #323E40;
+    text-decoration: none;
+    font-size: 0.80em;
+}
+
+.hometitle{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #323E40;
+    font-size: 1.2em;
+}
+
+.homeoptions{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+
+.bowloption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 80%;
+}
+
+.bowlimage{
+    padding: 10px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px #323E40;
+}
+
+.bowlimage.new{
+    background: rgb(185, 191, 4,.75);
+}
+
+.bowlimage.fav{
+    background: rgb(217, 121, 4,.75);
+}
+
+.bowlimage.random{
+    background: rgb(242, 174, 48,.75);
+}
+
+.register_label{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.formbtn{
+    background: #B9BF04;
+    color: #323E40;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px #323E40;
+    font-family: 'Roboto Mono', monospace;
+    transition-duration: 0.2s;
+}
+
+.formbtn:hover{
+    background: #BCD952;
+}
+
+.credits{
+    font-size: 0.5em;
+    margin: 20px;   
+}
+
+.formline{
+    display: flex;
+    flex-direction: column;
+}
+
+.desktopheader{
+    display: none;
+}
+
+@media only screen and (min-width: 481px) {
+
+    .background{
+        padding-top: 110px;
+    }
+
+    .mobileheader{
+        height: 100px;
+    }
+    
+    .logotext {
+        font-size: 3em;
+    
+    }
+
+    .formredirect{
+        font-size: 0.9em;
+    }
+
+    .background.login{
+        height: 1024px;
+    }
+    
+    .tabletnav{
+        position: fixed;
+        top: 100px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(185, 191, 4, 0.97);
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .tabnavoption{
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        color: #323E40;
+        text-decoration: none;
+    }
+
+    .navicon{
+        width: 30px;
+        margin: 10px;
+    }
+
+    .mobilenav{
+        display: none;
+    }
+    
+    .body{
+        padding-top: 160px;
+    }
+
+    .hometitle{
+        font-size: 1.5em;
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .formline{
+        flex-direction: row;
+        justify-content:space-evenly;
+        height: 30px;
+        margin-bottom: 20px;
+        align-items: center;
+        
+    }
+
+    .register_label{
+        margin-right: 20px;
+        word-wrap: none;
+        flex: 2;
+        width: 20%;
+        margin: 0 5px;
+    }
+
+    .register_input{
+        width: 100%;
+        margin: 0 5px;
+        flex: 6;
+    }
+
+    .register_input.large{
+        flex: 14;
+    }
+
+    .background{
+        padding-top: 110px;
+        height: 900px;
+    }
+
+    .formredirect{
+        font-size: 1em;
+    }
+
+    .tabletnav, .mobileheader{
+        display: none;
+    }
+
+    .desktopnav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+    }
+    
+    .desktopheader{
+        position: fixed;
+        width: 100%;
+        /* background-color: rgb(242, 242, 242, 0.90); */
+        background-color: rgb(185, 191, 4, 0.97);
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .body{
+        padding-top: 120px;
+        /* position: relative; */
+    }
+
+    .hometitle{
+        font-size: 1.75em;
+    }
+
+
+    .logotext {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 3em;
+        text-align: none;
+        margin: 0;
+        margin-left: 20px;
+        color: #323E40;
+    }
+
+    .desknavoption{
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        color: #323E40;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .homeoptions{
+        flex-direction: row;
+    }
+
+
+}
