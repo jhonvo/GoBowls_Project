@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Orders</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -78,18 +78,91 @@
 
     <div class="body"> 
         
-        <p class="hometitle">Quick Actions</p>
-    <ul class="homeoptions">
-            <li class="bowloption new rounded"><a href="/templates/neworder.html"><img class="bowlimage new" src="/img/salad.png" alt="Bowl"></a><p>Create a custom bowl from scratch.</p></li>
-            <li class="bowloption fav rounded"><a href="/templates/favorites.html"><img class="bowlimage fav" src="/img/salad.png" alt="Bowl"></a><p>Select one bowl from your favorites.</p></li>
-            <li class="bowloption random rounded"><a href="/templates/randomorder.html"><img class="bowlimage random" src="/img/salad.png" alt="Bowl"></a><p>Let us surprise you with a random selection of ingredients.</p></li>
-    </ul>
+        <p class="hometitle">Your Order:</p>
+
+        <div class="ordersgroup">
+            <div class="order rounded">
+
+                <p><b>Method:</b> Delivery</p>
+                <p><b>Size:</b> Medium</p>
+                <p><b>Base:</b> Quinoa</p>
+                <p><b>Dressing:</b> Balsamic</p>
+                <p><b>Ingredients:</b></p>
+                <ul>
+                    <li>Tomatoes</li>
+                    <li>Mushrooms</li>
+                    <li>Goat Cheese</li>
+                    <li>Black Olives</li>
+                </ul>
+                <p><b>Quantity:</b>1</p>
+                <span class="prices">
+                    <p>Price</p>
+                    <h5>$24.0</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+            </div>
+
+            <div class="order rounded">
+
+                <p><b>Method:</b> Delivery</p>
+                <p><b>Size:</b> Small</p>
+                <p><b>Base:</b> Jasmine Rice</p>
+                <p><b>Dressing:</b> Mustard</p>
+                <p><b>Ingredients:</b></p>
+                <ul>
+                    <li>Pickles</li>
+                    <li>Goat Cheese</li>
+                    <li>Green Olives</li>
+                </ul>
+                <p><b>Quantity:</b>1</p>
+                <span  class="prices">
+                    <p>Price</p>
+                    <h5>$20.0</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+            </div>
+
+            <div class="order rounded">
+                <span  class="prices">
+                    <h5>Subtotal</h5>
+                    <h5>$44.0</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+                <span  class="prices">
+                    <p>Delivery</p>
+                    <h5>$5.0</h5>
+                </span>
+                <span  class="prices">
+                    <p>Tax</p>
+                    <h5>$1.5</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+                <span  class="prices">
+                    <h5>Total</h5>
+                    <h5>$50.5</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+            </div>
+
+            <!-- <div class="favorite rounded">
+
+                <h4>Opps...</h4>
+                <p>You haven't created a bowl yet.</p>
+            </div> -->
+
+        </div>
+        <ul class="orderbtns">
+            <a href="/save" type="submit" class="formbtn favgreen btn">Place Order</a>
+            <a href="/remove" class="formbtn favorgange btn">Start Again</a>
+        </ul>
+        
+
+        
 
 
     </div>
 
     
-    <div class="credits home">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

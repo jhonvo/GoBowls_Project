@@ -94,6 +94,11 @@ header{
     text-align: center;
     margin: auto;
     color: #323E40;
+    text-decoration: none;
+}
+
+.logotext:active, .logotext:hover{
+    color: #323E40;
 }
 
 .formredirect{
@@ -170,6 +175,16 @@ header{
     background: #BCD952;
 }
 
+.formbtn.orderbtn{
+    background: #F2AE30;
+    width: 50%;
+    margin: 20px auto 15px auto;
+}
+
+.formbtn.orderbtn:hover{
+    background: #D98014;
+}
+
 .credits{
     font-size: 0.5em;
     margin: 20px;   
@@ -184,8 +199,103 @@ header{
     display: none;
 }
 
-@media only screen and (min-width: 481px) {
+.bowlform{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+    
+}
 
+.formcheckbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkbok{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.checkbok.li{
+    display: flex;
+    flex-direction: row;
+}
+
+.favorite{
+    width: 90%;
+    border: solid 1px #D98014;
+    margin: 0 auto 15px auto;
+    padding: 15px 15px 0 15px;
+}
+
+.favoritesgroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.favoritesbtns, .orderbtns{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: auto;
+}
+
+.formbtn.favgreen{
+    background: #B9BF04;
+    width: 60%;
+    margin: 20px auto 15px auto;
+}
+
+.formbtn.favgreen:hover{
+    background: #BCD952;
+}
+
+.formbtn.favorgange{
+    background: #F27F1B;
+    width: 60%;
+    margin: 20px auto 15px auto;
+}
+
+.formbtn.favorgange:hover{
+    background: #F2AE30;
+}
+
+.ordersgroup{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: start;
+    align-items: flex-start; */
+    border: solid 1px #D98014;
+    width: 90%;
+    margin: auto;
+}
+.order{
+    padding: 15px 15px 0 15px;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.accountgroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 481px) {
     .background{
         padding-top: 110px;
     }
@@ -243,6 +353,26 @@ header{
 
     .hometitle{
         font-size: 1.5em;
+    }
+
+    .favorite{
+        width: 40%;
+    }
+
+    .favorite.account{
+        width: 70%;
+    }
+
+    .favoritesbtns{
+        flex-direction: row;
+    }
+
+    .formbtn.favgreen, .formbtn.favorgange{
+        width: 45%;
+    }
+
+    .ordersgroup{
+        width: 60%;
     }
 
 }
@@ -344,5 +474,18 @@ header{
         flex-direction: row;
     }
 
+    .ordersgroup{
+        width: 45%;
+    }
 
+    .accountgroup{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .favorite.account{
+        width: 40%;
+    }
 }
