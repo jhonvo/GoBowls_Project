@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/templates/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="mobileheader">
+        <a href="/templates/home.html" class="logotext">GoBowls</a>
+        <a href="/logout" class="logouticon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="#323E40" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+        </svg></a>
+    </div>
+
+    <ul class="mobilenav">
+        <li class="navicon"><a href="/templates/home.html"><svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="#323E40" class="bi bi-house" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+        </svg></a></li>
+        <li class="navicon"><a href="/templates/orders.html"><svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="#323E40" class="bi bi-cart-check" viewBox="0 0 16 16">
+            <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg></a></li>
+        <li class="navicon"><a href="/templates/account.html"><svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="#323E40" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg></a></li>
+    </ul>
+
+    <ul class="tabletnav">
+        <li><a href="/templates/home.html" class="tabnavoption"><svg xmlns="http://www.w3.org/2000/svg" height="100%" fill="#323E40" class="bi bi-house navicon" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+        </svg>Home</a></li>
+        <li><a href="/templates/orders.html" class="tabnavoption"><svg xmlns="http://www.w3.org/2000/svg" height="100%" fill="#323E40" class="bi bi-cart-check navicon" viewBox="0 0 16 16">
+            <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>Order</a></li>
+        <li><a href="/templates/account.html" class="tabnavoption"><svg xmlns="http://www.w3.org/2000/svg" height="100%" fill="#323E40" class="bi bi-person-circle navicon" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>Account</a></li>
+    </ul>
+
+    <div class="desktopheader">
+        <a href="/templates/home.html" class="logotext">GoBowls</a>
+        <ul class="desktopnav">
+            <li><a href="/templates/home.html" class="desknavoption"><svg xmlns="http://www.w3.org/2000/svg" height="100%" fill="#323E40" class="bi bi-house navicon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg>Home</a></li>
+            <li class="desknavoption">|</li>
+            <li><a href="/templates/orders.html" class="desknavoption"><svg xmlns="http://www.w3.org/2000/svg" height="100%" fill="#323E40" class="bi bi-cart-check navicon" viewBox="0 0 16 16">
+                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg>Order</a></li>
+            <li class="desknavoption">|</li>
+            <li><a href="/templates/account.html" class="desknavoption"><svg xmlns="http://www.w3.org/2000/svg" height="100%" fill="#323E40" class="bi bi-person-circle navicon" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>Account</a></li>
+            <li class="desknavoption">|</li>
+            <li><a href="/logout" class="desknavoption"><svg xmlns="http://www.w3.org/2000/svg" height="100%" fill="#323E40" class="bi bi-person-circle navicon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+            </svg>Log Out</a></li>
+        </ul>
+    </div>
+
+
+    <div class="body"> 
+        
+        <p class="hometitle">Order Completed: #45454545454</p>
+
+        <div class="ordersgroup">
+            <div class="order rounded">
+
+                <p><b>Method:</b> Delivery</p>
+                <p><b>Size:</b> Medium</p>
+                <p><b>Base:</b> Quinoa</p>
+                <p><b>Dressing:</b> Balsamic</p>
+                <p><b>Ingredients:</b></p>
+                <ul>
+                    <li>Tomatoes</li>
+                    <li>Mushrooms</li>
+                    <li>Goat Cheese</li>
+                    <li>Black Olives</li>
+                </ul>
+                <p><b>Quantity:</b>1</p>
+                <span class="prices">
+                    <p>Price</p>
+                    <h5>$24.0</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+            </div>
+
+            <div class="order rounded">
+
+                <p><b>Method:</b> Delivery</p>
+                <p><b>Size:</b> Small</p>
+                <p><b>Base:</b> Jasmine Rice</p>
+                <p><b>Dressing:</b> Mustard</p>
+                <p><b>Ingredients:</b></p>
+                <ul>
+                    <li>Pickles</li>
+                    <li>Goat Cheese</li>
+                    <li>Green Olives</li>
+                </ul>
+                <p><b>Quantity:</b>1</p>
+                <span  class="prices">
+                    <p>Price</p>
+                    <h5>$20.0</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+            </div>
+
+            <div class="order rounded">
+                <span  class="prices">
+                    <h5>Subtotal</h5>
+                    <h5>$44.0</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+                <span  class="prices">
+                    <p>Delivery</p>
+                    <h5>$5.0</h5>
+                </span>
+                <span  class="prices">
+                    <p>Tax</p>
+                    <h5>$1.5</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+                <span  class="prices">
+                    <h5>Total</h5>
+                    <h5>$50.5</h5>
+                </span>
+                <p>- - - - - - - - - - - - - - - -</p>
+            </div>
+
+            <!-- <div class="favorite rounded">
+
+                <h4>Opps...</h4>
+                <p>You haven't created a bowl yet.</p>
+            </div> -->
+
+        </div>
+        <ul class="orderbtns">
+            <a href="/templates/home.html" class="formbtn favorgange btn">Start Again</a>
+        </ul>
+        
+
+        
+
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
